@@ -42,11 +42,11 @@ public class PlaceBlockController : MonoBehaviour
             }
         }
 
-        if (Input.mouseScrollDelta.y > 0)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Pallet.IncrumentBlockIndex();
         }
-        else if (Input.mouseScrollDelta.y < 0)
+        else if (Input.GetKeyDown(KeyCode.Q))
         {
             Pallet.DecrumentBlockIndex();
         }
